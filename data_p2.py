@@ -8,7 +8,7 @@ def setup():
     project1 = model.Project("Project 1", "http://www.google.com", "/static/img/cat1.jpg", "Team Name",
                              ["Talented Student 1", "Talented Student 2", "Smart Student 3"],
                             "This is our fabulous project, because we are cool")
-    project2 = model.Project("Project 2", "http://www.facebook.com", "/static/img/cat2.png", "Another Team Name",
+    project2 = model.Project("Project 2", "http://www.facebook.com", "/static/img/cat2.png", "SSH Login",
                              ["Talented Student 3", "Talented Student 4", "Smart Student 6"],
                             "This is another fabulous project of ours")
     project3 = model.Project("Project 3", "http://www.google.com", "/static/img/cat1.jpg", "Team Name",
