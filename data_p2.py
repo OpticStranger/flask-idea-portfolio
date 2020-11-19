@@ -8,9 +8,9 @@ def setup():
     project1 = model.Project("Project 1", "http://www.google.com", "/static/img/cat1.jpg", "Team Name",
                              ["Talented Student 1", "Talented Student 2", "Smart Student 3"],
                             "This is our fabulous project, because we are cool")
-    project2 = model.Project("Project 2", "http://www.facebook.com", "/static/img/cat2.png", "SSH Login",
-                             ["Talented Student 3", "Talented Student 4", "Smart Student 6"],
-                            "This is another fabulous project of ours")
+    p2_sshlogin = model.Project("SSH Login", url_for('p2_SSHLogin_bp.index'), "/static/img/sshlogin.png", "SSH Login",
+                             ["Ahmad Nasim", "Andrew Crisostomo", "Tanmay Marwah", "Max Vukovich", "Luca Pinto", "Cody Peng"],
+                            "We have created an SSH Login system thaf displays users system info using arrays, we also created a forum posting for data on our website.")
     project3 = model.Project("Project 3", "http://www.google.com", "/static/img/cat1.jpg", "Team Name",
                              ["Talented Student 1", "Talented Student 2", "Smart Student 3"],
                             "This is our fabulous project, because we are cool")
@@ -29,6 +29,6 @@ def setup():
     project8 = model.Project("Project 8", "http://www.facebook.com", "/static/img/cat2.png", "Another Team Name",
                              ["Talented Student 3", "Talented Student 4", "Smart Student 6"],
                             "This is another fabulous project of ours")
-    projects = [project1, project2, project3, project4, project5, project6, project7, project8]
+    projects = [project1, p2_sshlogin, project3, project4, project5, project6, project7, project8]
     period = model.Period("Period 2", "Some really smart people study here", projects)
     return period

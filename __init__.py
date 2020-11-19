@@ -16,3 +16,8 @@ app.register_blueprint(p1_mortos_bp, url_prefix='/period1/mortos')
 
 from p1_robotmania import p1_robotmania_bp
 app.register_blueprint(p1_robotmania_bp, url_prefix='/p1_robotmania')
+
+# PERIOD 2
+from p2_SSHLogin import p2_SSHLogin_bp
+app.register_blueprint(p2_SSHLogin_bp, url_prefix='/p2_SSHLogin')
+
